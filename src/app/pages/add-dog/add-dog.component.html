@@ -1,0 +1,12 @@
+<form (ngSubmit)="onSubmit()">
+  <label for="name">Nome:</label>
+  <input type="text" id="name" [(ngModel)]="dog.name" name="name" required>
+
+  <label for="breed">Raça:</label>
+  <input type="text" id="breed" [(ngModel)]="dog.breed" name="breed" required>
+
+  <label for="age">Idade:</label>
+  <input type="number" id="age" [(ngModel)]="dog.age" name="age" required>
+
+  <button type="submit">Cadastrar</button>
+</form>
